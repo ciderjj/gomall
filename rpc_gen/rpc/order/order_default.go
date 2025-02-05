@@ -42,3 +42,12 @@ func UpdateOrder(ctx context.Context, req *order.UpdateOrderReq, callOptions ...
 	}
 	return resp, nil
 }
+
+func DeleteOrder(ctx context.Context, req *order.DeleteOrderReq, callOptions ...callopt.Option) (resp *order.DeleteOrderResp, err error) {
+	resp, err = defaultClient.DeleteOrder(ctx, req, callOptions...)
+	if err != nil {
+		klog.CtxErrorf(ctx, "DeleteOrder call failed,err =%+v", err)
+		return nil, err
+	}
+	return resp, nil
+}

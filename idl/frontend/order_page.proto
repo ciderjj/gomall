@@ -26,6 +26,11 @@ message UpdateOrderReq {
   Address address = 4 [(api.form) = "address"];
 }
 
+message DeleteOrderReq {
+  string order_id = 1 [(api.form) = "orderId"];
+  uint32 user_id = 2 [(api.form) = "userId"];
+}
+
 service OrderService {
   rpc OrderList(common.Empty) returns (common.Empty) {
     option (api.get) = "/order";
@@ -37,5 +42,9 @@ service OrderService {
 
   rpc UpdateOrder(UpdateOrderReq) returns (common.Empty) {
     option (api.post) = "/order/update/:order_id";
+  }
+  
+  rpc DeleteOrder(DeleteOrderReq) returns (common.Empty) {
+    option (api.post) = "/order/delete/:order_id";
   }
 }

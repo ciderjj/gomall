@@ -51,3 +51,10 @@ func (s *OrderServiceImpl) UpdateOrder(ctx context.Context, req *order.UpdateOrd
 
 	return resp, err
 }
+
+// DeleteOrder implements the OrderServiceImpl interface.
+func (s *OrderServiceImpl) DeleteOrder(ctx context.Context, req *order.DeleteOrderReq) (resp *order.DeleteOrderResp, err error) {
+	resp, err = service.NewDeleteOrderService(ctx).Run(req)
+
+	return resp, err
+}

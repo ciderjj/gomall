@@ -100,3 +100,24 @@ func UpdateOrder(ctx context.Context, c *app.RequestContext) {
 	c.Redirect(consts.StatusOK, []byte("/order"))
 
 }
+
+// DeleteOrder .
+// @router /order/delete/:order_id [POST]
+func DeleteOrder(ctx context.Context, c *app.RequestContext) {
+	var err error
+	var req order.DeleteOrderReq
+	OrderId := c.Param("order_id")
+	err = c.BindAndValidate(&req)
+	if err != nil {
+		utils.SendErrResponse(ctx, c, consts.StatusOK, err)
+		return
+	}
+
+	_, err = service.NewDeleteOrderService(ctx, c).Run(OrderId, &req)
+
+	if err != nil {
+		utils.SendErrResponse(ctx, c, consts.StatusOK, err)
+		return
+	}
+	c.Redirect(consts.StatusOK, []byte("/order"))
+}

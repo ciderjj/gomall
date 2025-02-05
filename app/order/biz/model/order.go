@@ -66,3 +66,28 @@ func UpdateOrder(db *gorm.DB, ctx context.Context, userId uint32, orderId string
 	err = db.Model(&Order{}).Where(&Order{UserId: userId, OrderId: orderId}).Updates(updates).Error
 	return
 }
+
+func DeleteOrder(db *gorm.DB, ctx context.Context, userId uint32, orderId string) (err error) {
+	// 开启事务
+	tx := db.Begin()
+	if tx.Error != nil {
+		return tx.Error
+	}
+
+	// 先删除关联的 OrderItem 记录
+	if err := tx.Where("order_id_refer = ?", orderId).Delete(&OrderItem{}).Error; err != nil {
+		// 回滚事务
+		tx.Rollback()
+		return err
+	}
+
+	// 再删除 Order 记录
+	if err := tx.Where(&Order{UserId: userId, OrderId: orderId}).Delete(&Order{}).Error; err != nil {
+		// 回滚事务
+		tx.Rollback()
+		return err
+	}
+
+	// 提交事务
+	return tx.Commit().Error
+}
