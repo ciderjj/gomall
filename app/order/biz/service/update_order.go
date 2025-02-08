@@ -37,6 +37,7 @@ func (s *UpdateOrderService) Run(req *order.UpdateOrderReq) (resp *order.UpdateO
 		updates["city"] = req.Address.City
 		updates["street_address"] = req.Address.StreetAddress
 		updates["zip_code"] = req.Address.ZipCode
+		updates["updated_at"] = mysql.DB.NowFunc()
 	}
 	// 3. 执行更新
 	if len(updates) > 0 {

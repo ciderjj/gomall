@@ -66,7 +66,12 @@ func (s *ListOrderService) Run(req *order.ListOrderReq) (resp *order.ListOrderRe
 			},
 			OrderItems: items,
 		}
-		list = append(list, o)
+		//TODO: 30分钟未支付的订单删除
+		if v.OrderState != "paid" && mysql.DB.NowFunc().Unix()-v.CreatedAt.Unix() > 60*30 {
+			model.DeleteOrder(mysql.DB, s.ctx, v.UserId, v.OrderId)
+		} else {
+			list = append(list, o)
+		}
 	}
 	resp = &order.ListOrderResp{
 		Orders: list,

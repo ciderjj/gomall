@@ -43,6 +43,10 @@ func (s *MarkOrderPaidService) Run(req *order.MarkOrderPaidReq) (resp *order.Mar
 		klog.Errorf("model.ListOrder.err:%v", err)
 		return nil, err
 	}
+	//更新订单状态
+	err = model.UpdateOrder(mysql.DB, s.ctx, req.UserId, req.OrderId, map[string]interface{}{
+		"order_state": "paid",
+	})
 	resp = &order.MarkOrderPaidResp{}
 	return
 }
