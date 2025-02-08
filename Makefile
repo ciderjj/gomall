@@ -28,7 +28,7 @@ gen-server: ## gen service code of {svc}. example: make gen-server svc=product
 
 .PHONY: gen-frontend
 gen-frontend:
-	@cd app/frontend && cwgo server -I ../../idl --type HTTP --service frontend --module github.com/xvxiaoman8/gomall/app/frontend --idl ../../idl/frontend/order_page.proto
+	@cd app/frontend && cwgo server -I ../../idl --type HTTP --service frontend --module github.com/xvxiaoman8/gomall/app/frontend --idl ../../idl/frontend/cart_page.proto
 
 ##@ Build
 

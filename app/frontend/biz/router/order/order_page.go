@@ -3,8 +3,8 @@
 package order
 
 import (
-	order "github.com/xvxiaoman8/gomall/app/frontend/biz/handler/order"
 	"github.com/cloudwego/hertz/pkg/app/server"
+	order "github.com/xvxiaoman8/gomall/app/frontend/biz/handler/order"
 )
 
 /*

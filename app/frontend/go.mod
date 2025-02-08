@@ -9,8 +9,6 @@ replace (
 )
 
 require (
-	github.com/xvxiaoman8/gomall/common v0.0.0-00010101000000-000000000000
-	github.com/xvxiaoman8/gomall/rpc_gen v0.0.0-20250107114945-cd595cc0e3ad
 	github.com/cloudwego/hertz v0.7.3
 	github.com/cloudwego/kitex v0.11.3
 	github.com/hashicorp/consul/api v1.26.1
@@ -29,6 +27,8 @@ require (
 	github.com/kr/pretty v0.3.1
 	github.com/prometheus/client_golang v1.19.0
 	github.com/redis/go-redis/v9 v9.3.1
+	github.com/xvxiaoman8/gomall/common v0.0.0-00010101000000-000000000000
+	github.com/xvxiaoman8/gomall/rpc_gen v0.0.0-20250107114945-cd595cc0e3ad
 	go.opentelemetry.io/otel v1.25.0
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.25.0
 	go.opentelemetry.io/otel/sdk v1.25.0
