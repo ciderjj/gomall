@@ -18,7 +18,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
-	"github.com/cloudwego/biz-demo/gomall/app/checkout/conf"
+	"github.com/xvxiaoman8/gomall/app/checkout/conf"
 )
 
 var (

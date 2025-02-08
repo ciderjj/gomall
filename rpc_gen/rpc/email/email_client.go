@@ -2,11 +2,12 @@ package email
 
 import (
 	"context"
-	email "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/email"
 
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/email/emailservice"
+	email "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/email"
+
 	"github.com/cloudwego/kitex/client"
 	"github.com/cloudwego/kitex/client/callopt"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/email/emailservice"
 )
 
 type RPCClient interface {

@@ -21,16 +21,16 @@ import (
 	"github.com/joho/godotenv"
 	"gopkg.in/natefinch/lumberjack.v2"
 
-	"github.com/cloudwego/biz-demo/gomall/app/email/biz/consumer"
-	"github.com/cloudwego/biz-demo/gomall/app/email/conf"
-	"github.com/cloudwego/biz-demo/gomall/app/email/infra/mq"
-	"github.com/cloudwego/biz-demo/gomall/common/mtl"
-	"github.com/cloudwego/biz-demo/gomall/common/utils"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/email/emailservice"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/cloudwego/kitex/pkg/rpcinfo"
 	"github.com/cloudwego/kitex/server"
 	"github.com/kitex-contrib/obs-opentelemetry/provider"
+	"github.com/xvxiaoman8/gomall/app/email/biz/consumer"
+	"github.com/xvxiaoman8/gomall/app/email/conf"
+	"github.com/xvxiaoman8/gomall/app/email/infra/mq"
+	"github.com/xvxiaoman8/gomall/common/mtl"
+	"github.com/xvxiaoman8/gomall/common/utils"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/email/emailservice"
 )
 
 var serviceName = conf.GetConf().Kitex.Service

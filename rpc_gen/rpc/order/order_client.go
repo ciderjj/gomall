@@ -2,11 +2,12 @@ package order
 
 import (
 	"context"
-	order "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/order"
 
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/order/orderservice"
+	order "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/order"
+
 	"github.com/cloudwego/kitex/client"
 	"github.com/cloudwego/kitex/client/callopt"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/order/orderservice"
 )
 
 type RPCClient interface {

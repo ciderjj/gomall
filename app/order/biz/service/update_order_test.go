@@ -3,7 +3,8 @@ package service
 import (
 	"context"
 	"testing"
-	order "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/order"
+
+	order "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/order"
 )
 
 func TestUpdateOrder_Run(t *testing.T) {

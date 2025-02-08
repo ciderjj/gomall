@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	order "github.com/cloudwego/biz-demo/gomall/app/frontend/hertz_gen/frontend/order"
-	"github.com/cloudwego/biz-demo/gomall/app/frontend/infra/rpc"
-	"github.com/cloudwego/biz-demo/gomall/app/frontend/types"
-	frontendutils "github.com/cloudwego/biz-demo/gomall/app/frontend/utils"
-	rpcorder "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/order"
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/common/utils"
+	order "github.com/xvxiaoman8/gomall/app/frontend/hertz_gen/frontend/order"
+	"github.com/xvxiaoman8/gomall/app/frontend/infra/rpc"
+	"github.com/xvxiaoman8/gomall/app/frontend/types"
+	frontendutils "github.com/xvxiaoman8/gomall/app/frontend/utils"
+	rpcorder "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/order"
 )
 
 type UpdateOrderPageService struct {

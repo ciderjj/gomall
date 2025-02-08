@@ -18,7 +18,7 @@ import (
 	"context"
 	"testing"
 
-	email "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/email"
+	email "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/email"
 )
 
 func TestSend_Run(t *testing.T) {

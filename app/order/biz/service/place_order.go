@@ -18,10 +18,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cloudwego/biz-demo/gomall/app/order/biz/dal/mysql"
-	"github.com/cloudwego/biz-demo/gomall/app/order/biz/model"
-	order "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/order"
 	"github.com/google/uuid"
+	"github.com/xvxiaoman8/gomall/app/order/biz/dal/mysql"
+	"github.com/xvxiaoman8/gomall/app/order/biz/model"
+	order "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/order"
 	"gorm.io/gorm"
 )
 

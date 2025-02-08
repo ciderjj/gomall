@@ -18,9 +18,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/cloudwego/biz-demo/gomall/app/user/biz/dal/mysql"
-	"github.com/cloudwego/biz-demo/gomall/app/user/biz/model"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/user"
+	"github.com/xvxiaoman8/gomall/app/user/biz/dal/mysql"
+	"github.com/xvxiaoman8/gomall/app/user/biz/model"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/user"
 	"golang.org/x/crypto/bcrypt"
 )
 

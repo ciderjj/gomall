@@ -17,7 +17,7 @@ package service
 import (
 	"context"
 
-	email "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/email"
+	email "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/email"
 )
 
 type SendService struct {

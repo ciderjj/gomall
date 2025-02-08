@@ -15,7 +15,7 @@
 package mysql
 
 import (
-	"github.com/cloudwego/biz-demo/gomall/app/email/conf"
+	"github.com/xvxiaoman8/gomall/app/email/conf"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

@@ -17,8 +17,8 @@ package redis
 import (
 	"context"
 
-	"github.com/cloudwego/biz-demo/gomall/app/user/conf"
 	"github.com/redis/go-redis/v9"
+	"github.com/xvxiaoman8/gomall/app/user/conf"
 )
 
 var RedisClient *redis.Client

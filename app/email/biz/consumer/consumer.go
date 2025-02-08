@@ -14,7 +14,7 @@
 
 package consumer
 
-import "github.com/cloudwego/biz-demo/gomall/app/email/biz/consumer/email"
+import "github.com/xvxiaoman8/gomall/app/email/biz/consumer/email"
 
 func Init() {
 	email.ConsumerInit()

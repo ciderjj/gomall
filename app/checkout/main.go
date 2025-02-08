@@ -18,16 +18,16 @@ import (
 	"net"
 	"strings"
 
-	"github.com/cloudwego/biz-demo/gomall/app/checkout/conf"
-	"github.com/cloudwego/biz-demo/gomall/app/checkout/infra/mq"
-	"github.com/cloudwego/biz-demo/gomall/app/checkout/infra/rpc"
-	"github.com/cloudwego/biz-demo/gomall/common/mtl"
-	"github.com/cloudwego/biz-demo/gomall/common/serversuite"
-	"github.com/cloudwego/biz-demo/gomall/common/utils"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/checkout/checkoutservice"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/cloudwego/kitex/server"
 	"github.com/joho/godotenv"
+	"github.com/xvxiaoman8/gomall/app/checkout/conf"
+	"github.com/xvxiaoman8/gomall/app/checkout/infra/mq"
+	"github.com/xvxiaoman8/gomall/app/checkout/infra/rpc"
+	"github.com/xvxiaoman8/gomall/common/mtl"
+	"github.com/xvxiaoman8/gomall/common/serversuite"
+	"github.com/xvxiaoman8/gomall/common/utils"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/checkout/checkoutservice"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

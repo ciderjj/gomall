@@ -17,10 +17,10 @@ package service
 import (
 	"context"
 
-	"github.com/cloudwego/biz-demo/gomall/app/user/biz/dal/mysql"
-	"github.com/cloudwego/biz-demo/gomall/app/user/biz/model"
-	user "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/user"
 	"github.com/cloudwego/kitex/pkg/klog"
+	"github.com/xvxiaoman8/gomall/app/user/biz/dal/mysql"
+	"github.com/xvxiaoman8/gomall/app/user/biz/model"
+	user "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/user"
 	"golang.org/x/crypto/bcrypt"
 )
 

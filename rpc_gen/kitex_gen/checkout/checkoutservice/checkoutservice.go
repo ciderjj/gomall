@@ -4,7 +4,7 @@ package checkoutservice
 
 import (
 	"context"
-	checkout "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/checkout"
+	checkout "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/checkout"
 	client "github.com/cloudwego/kitex/client"
 	kitex "github.com/cloudwego/kitex/pkg/serviceinfo"
 	streaming "github.com/cloudwego/kitex/pkg/streaming"

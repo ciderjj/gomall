@@ -15,8 +15,8 @@
 package notify
 
 import (
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/email"
 	"github.com/kr/pretty"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/email"
 )
 
 type NoopEmail struct{}

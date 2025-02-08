@@ -17,12 +17,12 @@ package rpc
 import (
 	"sync"
 
-	"github.com/cloudwego/biz-demo/gomall/common/clientsuite"
+	"github.com/xvxiaoman8/gomall/common/clientsuite"
 
-	"github.com/cloudwego/biz-demo/gomall/app/cart/conf"
-	cartutils "github.com/cloudwego/biz-demo/gomall/app/cart/utils"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/product/productcatalogservice"
 	"github.com/cloudwego/kitex/client"
+	"github.com/xvxiaoman8/gomall/app/cart/conf"
+	cartutils "github.com/xvxiaoman8/gomall/app/cart/utils"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/product/productcatalogservice"
 )
 
 var (

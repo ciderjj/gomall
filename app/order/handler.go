@@ -17,8 +17,8 @@ package main
 import (
 	"context"
 
-	"github.com/cloudwego/biz-demo/gomall/app/order/biz/service"
-	order "github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/order"
+	"github.com/xvxiaoman8/gomall/app/order/biz/service"
+	order "github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/order"
 )
 
 // OrderServiceImpl implements the last service interface defined in the IDL.

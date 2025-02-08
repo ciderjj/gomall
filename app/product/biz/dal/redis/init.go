@@ -17,12 +17,12 @@ package redis
 import (
 	"context"
 
-	"github.com/cloudwego/biz-demo/gomall/app/product/conf"
-	"github.com/cloudwego/biz-demo/gomall/common/mtl"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/redis/go-redis/extra/redisotel/v9"
 	"github.com/redis/go-redis/extra/redisprometheus/v9"
 	"github.com/redis/go-redis/v9"
+	"github.com/xvxiaoman8/gomall/app/product/conf"
+	"github.com/xvxiaoman8/gomall/common/mtl"
 )
 
 var RedisClient *redis.Client

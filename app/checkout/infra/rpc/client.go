@@ -17,14 +17,14 @@ package rpc
 import (
 	"sync"
 
-	"github.com/cloudwego/biz-demo/gomall/app/checkout/conf"
-	checkoututils "github.com/cloudwego/biz-demo/gomall/app/checkout/utils"
-	"github.com/cloudwego/biz-demo/gomall/common/clientsuite"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/cart/cartservice"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/order/orderservice"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/payment/paymentservice"
-	"github.com/cloudwego/biz-demo/gomall/rpc_gen/kitex_gen/product/productcatalogservice"
 	"github.com/cloudwego/kitex/client"
+	"github.com/xvxiaoman8/gomall/app/checkout/conf"
+	checkoututils "github.com/xvxiaoman8/gomall/app/checkout/utils"
+	"github.com/xvxiaoman8/gomall/common/clientsuite"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/cart/cartservice"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/order/orderservice"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/payment/paymentservice"
+	"github.com/xvxiaoman8/gomall/rpc_gen/kitex_gen/product/productcatalogservice"
 )
 
 var (

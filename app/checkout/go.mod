@@ -1,22 +1,22 @@
-module github.com/cloudwego/biz-demo/gomall/app/checkout
+module github.com/xvxiaoman8/gomall/app/checkout
 
 go 1.21
 
 replace github.com/apache/thrift => github.com/apache/thrift v0.13.0
 
 replace (
-	github.com/cloudwego/biz-demo/gomall/common => ../../common
-	github.com/cloudwego/biz-demo/gomall/rpc_gen => ../../rpc_gen
+	github.com/xvxiaoman8/gomall/common => ../../common
+	github.com/xvxiaoman8/gomall/rpc_gen => ../../rpc_gen
 )
 
 require (
-	github.com/cloudwego/biz-demo/gomall/common v0.0.0-00010101000000-000000000000
-	github.com/cloudwego/biz-demo/gomall/rpc_gen v0.0.0-00010101000000-000000000000
 	github.com/cloudwego/kitex v0.11.3
 	github.com/joho/godotenv v1.5.1
 	github.com/kr/pretty v0.3.1
 	github.com/nats-io/nats.go v1.31.0
 	github.com/redis/go-redis/v9 v9.3.1
+	github.com/xvxiaoman8/gomall/common v0.0.0-00010101000000-000000000000
+	github.com/xvxiaoman8/gomall/rpc_gen v0.0.0-20250107114945-cd595cc0e3ad
 	go.opentelemetry.io/otel v1.25.0
 	google.golang.org/protobuf v1.33.0
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
